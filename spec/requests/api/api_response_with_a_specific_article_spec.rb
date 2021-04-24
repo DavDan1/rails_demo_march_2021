@@ -14,7 +14,7 @@ RSpec.describe 'GET /api/articles/:id', type: :request do
     expect(JSON.parse(response.body)['article']['title']).to eq 'Fun with RSpec!'
   end
 
-  it 'is expected to include bthe article body' do
+  it 'is expected to include the article body' do
     expect(JSON.parse(response.body)['article']['body']).to eq 'This is the content of my article...'
   end
 
